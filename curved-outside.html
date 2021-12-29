@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/817f93a7d5.js" crossorigin="anonymous"></script>
+    <title>Curved Outside</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            height: 600px;
+            background: #213681;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        p.icon {
+            opacity: 0.2;
+            font-size: 155px;
+            margin-top: 48px;
+        }
+
+        span.curve {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 70px 70px 0 0;
+            bottom: 0;
+        }
+
+        span.curve i {
+            position: relative;
+            z-index: 8;
+            font-size: 55px;
+        }
+
+        span.curve:before {
+            content: "";
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            right: 100%;
+            border-bottom-right-radius: 35px;
+            box-shadow: 35px 0 0 0;
+            color: #fff;
+        }
+
+        span.curve:after {
+            content: "";
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            border-bottom-left-radius: 35px;
+            box-shadow: -35px 0 0 0;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="icon"><i class="fas fa-newspaper"></i></p>
+        <span class="curve">
+            <i class="fas fa-pen-nib"></i>
+        </span>
+    </div>
+</body>
+
+</html>
